@@ -1,105 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Countries and Capitals</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
 
-  <!-- Navigation -->
+ 
   <nav class="bg-blue-600 p-4">
-    <div class="max-w-7xl mx-auto flex justify-between items-center text-white">
-      <h1 class="text-3xl font-bold">Countries and Capitals</h1>
-      <ul class="flex space-x-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-white">
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold">Countries and Capitals</h1>
+      <ul class="flex space-x-4 mt-4 sm:mt-0">
         <li><a href="#home" class="hover:text-gray-200">Home</a></li>
         <li><a href="#countries" class="hover:text-gray-200">Countries</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Home Section -->
-  <section id="home" class="bg-blue-100 py-20">
-    <div class="max-w-7xl mx-auto text-center">
-      <h2 class="text-4xl font-bold text-blue-800 mb-6">Welcome to Our Website</h2>
-      <p class="text-lg text-gray-700 mb-6">Here you can discover interesting facts about countries around the world and their capitals.</p>
+ 
+  <section id="home" class="bg-blue-100 py-16 md:py-20">
+    <div class="max-w-7xl mx-auto text-center px-4">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-800 mb-6">Welcome to Our Website</h2>
+      <p class="text-base sm:text-lg text-gray-700">Here you can discover interesting facts about countries around the world and their capitals.</p>
     </div>
   </section>
 
-  <!-- Countries Section -->
-  <section id="countries" class="py-20">
+  <section id="countries" class="py-16 md:py-20 px-4">
     <div class="max-w-7xl mx-auto text-center">
-      <h2 class="text-4xl font-bold text-blue-800 mb-12">Countries and Capitals</h2>
-      
-      <!-- Country 1: USA -->
-      <div class="mb-12">
-        <img src="https://cdn.unicreds.com/blog/wp-content/uploads/2023/01/03194949/Untitled-design-17.png" alt="USA" class="h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300">
-        <h3 class="text-3xl font-semibold text-blue-700">United States</h3>
-        <p class="text-xl text-gray-600">Capital: Washington, D.C.</p>
-        <p class="text-lg text-gray-700 mt-4">The United States is known for its diverse geography, technology, and cultural influence. Washington, D.C. serves as the nation's capital and is home to numerous iconic landmarks like the White House and the U.S. Capitol.</p>
-      </div>
-      
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-800 mb-12">Countries and Capitals</h2>
 
-  
-      <div class="mb-12">
-        <img src="https://www.expat.hsbc.com/content/dam/hsbc/mbos/img/international-banking/16-9/3340-france-city-2000x1125.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg" alt="France" class="h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300">
-        <h3 class="text-3xl font-semibold text-blue-700">France</h3>
-        <p class="text-xl text-gray-600">Capital: Paris</p>
-        <p class="text-lg text-gray-700 mt-4">France is famous for its rich history, culture, and world-renowned cuisine. Paris, the capital, is known as the "City of Light" and is home to landmarks like the Eiffel Tower and the Louvre Museum.</p>
-      </div>
+
+      <div class="grid gap-16">
+   
+        <div>
+          <img src="https://cdn.unicreds.com/blog/wp-content/uploads/2023/01/03194949/Untitled-design-17.png"
+            alt="USA"
+            class="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300" />
+          <h3 class="text-2xl sm:text-3xl font-semibold text-blue-700">United States</h3>
+          <p class="text-lg text-gray-600">Capital: Washington, D.C.</p>
+          <p class="text-base sm:text-lg text-gray-700 mt-4">The United States is known for its diverse geography, technology, and cultural influence...</p>
+        </div>
+
+        
+        <div>
+          <img src="https://www.expat.hsbc.com/content/dam/hsbc/mbos/img/international-banking/16-9/3340-france-city-2000x1125.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg"
+            alt="France"
+            class="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300" />
+          <h3 class="text-2xl sm:text-3xl font-semibold text-blue-700">France</h3>
+          <p class="text-lg text-gray-600">Capital: Paris</p>
+          <p class="text-base sm:text-lg text-gray-700 mt-4">France is famous for its rich history, culture, and cuisine...</p>
+        </div>
+
+       
+        <div>
+          <img src="https://exodus-website.s3.amazonaws.com/uploads/2022/08/japan-kyoto-1024x646.jpg"
+            alt="Japan"
+            class="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300" />
+          <h3 class="text-2xl sm:text-3xl font-semibold text-blue-700">Japan</h3>
+          <p class="text-lg text-gray-600">Capital: Tokyo</p>
+          <p class="text-base sm:text-lg text-gray-700 mt-4">Japan is known for its technology, rich culture, and nature...</p>
+        </div>
+
+      
+        <div>
+          <img src="https://www.gorealtravel.com/blog/wp-content/uploads/2024/06/Plan-a-trip-to-Germany.jpg"
+            alt="Germany"
+            class="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300" />
+          <h3 class="text-2xl sm:text-3xl font-semibold text-blue-800 hover:text-blue-600 transition-colors duration-300">Germany</h3>
+          <p class="text-lg text-gray-600">Capital: Berlin</p>
+          <p class="text-base sm:text-lg text-gray-700 mt-4">Germany is known for engineering and rich history...</p>
+        </div>
 
      
-      <div>
-        <img src="https://exodus-website.s3.amazonaws.com/uploads/2022/08/japan-kyoto-1024x646.jpg" alt="Japan" class="h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300">
-        <h3 class="text-3xl font-semibold text-blue-700">Japan</h3>
-        <p class="text-xl text-gray-600">Capital: Tokyo</p>
-        <p class="text-lg text-gray-700 mt-4">Japan is a country known for its technological advancements, rich culture, and beautiful landscapes. Tokyo, the capital, is a bustling metropolis famous for its skyscrapers, shopping districts, and ancient temples.</p>
+        <div>
+          <img src="https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/Yerevan-1.jpg"
+            alt="Armenia"
+            class="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300" />
+          <h3 class="text-2xl sm:text-3xl font-semibold text-blue-800 hover:text-blue-600 transition-colors duration-300">Armenia</h3>
+          <p class="text-lg text-gray-600">Capital: Yerevan</p>
+          <p class="text-base sm:text-lg text-gray-700 mt-4">Armenia is rich in culture, history, and stunning scenery...</p>
+        </div>
+
+        
+        <div>
+          <img src="https://news.exeter.ac.uk/wp-content/uploads/2023/08/Untitled39.jpg"
+            alt="Russia"
+            class="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300" />
+          <h3 class="text-2xl sm:text-3xl font-semibold text-blue-800 hover:text-blue-600 transition-colors duration-300">Russia</h3>
+          <p class="text-lg text-gray-600">Capital: Moscow</p>
+          <p class="text-base sm:text-lg text-gray-700 mt-4">Russia is the largest country in the world with rich culture...</p>
+        </div>
+
+       
+        <div>
+          <img src="https://www.sykescottages.co.uk/blog/wp-content/uploads/2022/09/Facts-About-England-Feature.jpg"
+            alt="United Kingdom"
+            class="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300" />
+          <h3 class="text-2xl sm:text-3xl font-semibold text-blue-800 hover:text-blue-600 transition-colors duration-300">United Kingdom</h3>
+          <p class="text-lg text-gray-600">Capital: London</p>
+          <p class="text-base sm:text-lg text-gray-700 mt-4">The UK is famous for its royal family and landmarks like Big Ben...</p>
+        </div>
       </div>
- 
-
-
-    <div class="mb-12">
-      <img src="https://www.gorealtravel.com/blog/wp-content/uploads/2024/06/Plan-a-trip-to-Germany.jpg" alt="Germany" class=" h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300">
-      <h3 class="text-4xl font-semibold text-blue-800 hover:text-blue-600 transition-colors duration-300">Germany</h3>
-      <p class="text-xl text-gray-600">Capital: Berlin</p>
-      <p class="text-lg text-gray-700 mt-4">Germany is known for its rich history, engineering, and strong economy. Berlin, the capital, is famous for its cultural landmarks like the Brandenburg Gate, the Berlin Wall, and the Museum Island.</p>
     </div>
-    
-    <div class="mb-12">
-      <img src="https://pohcdn.com/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/Yerevan-1.jpg" alt="Armenia" class="w-full h-[600px] object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105   duration-300">
-      <h3 class="text-4xl font-semibold text-blue-800 hover:text-blue-600 transition-colors duration-300">Armenia</h3>
-      <p class="text-xl text-gray-600">Capital: Yerevan</p>
-      <p class="text-lg text-gray-700 mt-4">Armenia is a country rich in history, ancient monuments, and beautiful landscapes. Yerevan, the capital, is known for its vibrant culture, historical sites, and modern architecture.</p>
-    </div>
-
-    <div class="mb-12">
-      <img src="https://news.exeter.ac.uk/wp-content/uploads/2023/08/Untitled39.jpg" alt="Russia" class="h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300">
-      <h3 class="text-4xl font-semibold text-blue-800 hover:text-blue-600 transition-colors duration-300">Russia</h3>
-      <p class="text-xl text-gray-600">Capital: Moscow</p>
-      <p class="text-lg text-gray-700 mt-4">Russia is the largest country in the world, known for its vast landscapes, historical cities, and cultural heritage. Moscow, the capital, is home to landmarks like the Kremlin and Red Square.</p>
-    </div>
-    
-    <div class="mb-12">
-      <img src="https://www.sykescottages.co.uk/blog/wp-content/uploads/2022/09/Facts-About-England-Feature.jpg" alt="United Kingdom" class="h-[600px] w-full object-cover rounded-lg shadow-lg mb-6 transition-transform transform hover:scale-105 duration-300">
-      <h3 class="text-4xl font-semibold text-blue-800 hover:text-blue-600 transition-colors duration-300">United Kingdom</h3>
-      <p class="text-xl text-gray-600">Capital: London</p>
-      <p class="text-lg text-gray-700 mt-4">The United Kingdom is known for its monarchy, historical sites, and global influence. London, the capital, features iconic landmarks such as the Big Ben, Buckingham Palace, and the Tower of London.</p>
-    </div>
-    
-  </div>
-    
   </section>
 
-  <section id="contact" class="bg-blue-100 py-20">
-    <div class="max-w-7xl mx-auto text-center">
-      <h2 class="text-4xl font-bold text-blue-800 mb-6">Contact Us</h2>
-      <p class="text-lg text-gray-700 mb-6">If you have any questions or want to get in touch, feel free to contact us!</p>
-      <form class="max-w-3xl mx-auto mb-8">
-        <input type="text" placeholder="Name" class="w-full p-4 mb-4 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
-        <input type="email" placeholder="Email" class="w-full p-4 mb-4 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+
+  <section id="contact" class="bg-blue-100 py-16 md:py-20">
+    <div class="max-w-7xl mx-auto text-center px-4">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-800 mb-6">Contact Us</h2>
+      <p class="text-base sm:text-lg text-gray-700 mb-6">If you have any questions or want to get in touch, feel free to contact us!</p>
+      <form class="max-w-3xl mx-auto">
+        <input type="text" placeholder="Name" class="w-full p-4 mb-4 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600" />
+        <input type="email" placeholder="Email" class="w-full p-4 mb-4 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600" />
         <textarea placeholder="Your Message" class="w-full p-4 mb-4 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700">Submit</button>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors">Submit</button>
       </form>
     </div>
   </section>
